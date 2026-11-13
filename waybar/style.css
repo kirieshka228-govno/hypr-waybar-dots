@@ -58,7 +58,7 @@ window#waybar {
   padding: 0 12px;
 }
 
-#custom-notification, #custom-launcher, cpu, #memory, #hyprland-language, #pulseaudio, #battery, #custom-power {
+#custom-notification, #custom-launcher, #cpu, #temperature,  #memory, #hyprland-language, #pulseaudio, #battery, #custom-power {
   padding: 0 5px;
   margin: 0 2px;
 }
@@ -66,6 +66,19 @@ window#waybar {
 #cpu {
   color: #71a3f5;
 }
+
+#temperature {
+    color: #71a3f5;
+}
+
+#temperature.warning {
+    color: orange;
+}
+
+#temperature.critical {
+    color: red;
+}
+
 
 #memory {
   color: #71a3f5;
@@ -78,6 +91,7 @@ window#waybar {
 #notification {
   color: #71a3f5;
 }
+
 #pulseaudio {
   color: #71a3f5;
 }
